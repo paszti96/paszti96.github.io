@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    {% if page.title %}{{ page.title }} – {{ site.title }}{% else %}{{ site.title }}{% endif %}
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="{{ '/' | relative_url }}" class="site-title">
+        {{ site.title }}
+      </a>
+      <p class="site-tagline">{{ site.tagline }}</p>
+      <nav class="site-nav">
+        {% for item in site.nav %}
+          <a href="{{ item.url | relative_url }}" class="nav-link{% if page.url == item.url %} nav-link-active{% endif %}">
+            {{ item.name }}
+          </a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:{{ site.author.email }}">Email</a>
+        <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
