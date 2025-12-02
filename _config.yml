@@ -1,14 +1,14 @@
-title: "Gábor D. Pasztor"
+title: "Gabor D. Pasztor"
 tagline: "Quant Engineering • Trading Infrastructure • Systems"
-description: "Portfolio of Gábor D. Pasztor – building trading systems, quant tools, and microstructure simulations."
+description: "Portfolio of Gabor D. Pasztor – building trading systems, quant tools, and microstructure simulations."
 baseurl: "" # for user/organization site
 url: "https://your-github-username.github.io"
 
 author:
-  name: "Gábor D. Pasztor"
+  name: "Gabor D. Pasztor"
   email: "pasztor.g.96@gmail.com"
-  github: "your-github-username"
-  linkedin: "gpasztor"
+  github: "paszti96"
+  linkedin: "https://www.linkedin.com/in/gpasztor/"
 
 markdown: kramdown
 theme: null
