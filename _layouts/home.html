@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <h1>Building trading systems & quant infrastructure.</h1>
+  <p class="hero-subtitle">
+    I’m {{ site.title }}, a Vice President & Senior Software Engineer focusing on
+    trading libraries, market data pipelines, and systematic strategies.
+  </p>
+</section>
+
+<section class="grid">
+  <article class="card">
+    <h2>What I Do</h2>
+    <p>
+      I design and build tools for portfolio managers and traders:
+      execution libraries, analytics platforms, and data pipelines
+      for systematic multi-asset strategies.
+    </p>
+  </article>
+
+  <article class="card">
+    <h2>Current Focus</h2>
+    <p>
+      Limit Order Book simulation, execution strategy tooling, and
+      micro-SaaS products around market microstructure and portfolio analytics.
+    </p>
+  </article>
+
+  <article class="card">
+    <h2>Open to</h2>
+    <p>
+      Quant engineering / trading infrastructure roles in London, Zurich, or remote,
+      and collaborations on systematic trading tools and research.
+    </p>
+  </article>
+</section>
+
+<section>
+  <h2>Selected Projects</h2>
+
+  <div class="list">
+    <article class="list-item">
+      <h3>Limit Order Book Matching Engine & Microstructure Simulator</h3>
+      <p>
+        A deterministic, replayable LOB engine for simulating order flow,
+        queue position, and execution quality for systematic trading strategies.
+      </p>
+      <p class="meta">
+        <a href="{{ '/projects/#lob-engine' | relative_url }}">Details</a> ·
+        <a href="https://github.com/your-github-username/lob-simulator" target="_blank" rel="noopener">Code</a>
+      </p>
+    </article>
+
+    <article class="list-item">
+      <h3>Portfolio Analytics & Backtesting Tools</h3>
+      <p>
+        Python tooling for factor exposure analysis, portfolio statistics, and
+        backtesting workflows for multi-asset strategies.
+      </p>
+      <p class="meta">
+        <a href="{{ '/projects/#portfolio-analytics' | relative_url }}">Details</a>
+      </p>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Recent Writing</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:3 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="post-meta">· {{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  <p>
+    <a href="{{ '/blog/' | relative_url }}">View all posts →</a>
+  </p>
+</section>
